@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Estudos básicos - N&uacute;meros</title>
+</head>
+
+<body>
+    <h1>N&uacute;meros!!!!</h1>
+
+    <p>N&uacute;meros em JavaScript s&atilde;o "valores de precis&atilde;o dupla no formato IEEE 754"</p>
+    <p>Como consequ&ecirc;ncia:</p>
+    <p>
+        <span id='n1'>0.1</span>
+        <span id='a'> + </span>
+        <span id='n2'>0.2</span>
+        <span id='i'> == </span>
+        <span id='n3'> ? </span>
+    </p>
+
+    <h2>Fun&ccedil;&otilde;es parserInt() e parseFloat()</h2>
+    <p>Em geral quando buscamos os valores de alguma elemento HTML, esse valor &eacute; retornado como String:</p>
+    <p>Um c&oacute;digo assim retorna strings:</p>
+    <code>var elemento = document.getElementById('n1').innerHTML</code>
+    <p>Retornar&aacute; o valor de n1 que é uma String. Se realizarmos uma adi&ccedil;&atilde;o sobre esse valor,
+        estaremos concatenando:</p>
+
+    <p>
+        <span id='s1'>0.1</span>
+        <span id='sa'> + </span>
+        <span id='s2'>0.2</span>
+        <span id='si'> == </span>
+        <span id='s3'> ? </span>
+    </p>
+    <p id='exp1'></p>
+    <p>Para obtermos o resultado que desejamos com a adi&ccedil;&atilde;o &eacute; necess&aacute;rio
+        usar uma fun&ccedil;&atilde;o parserInt() ou parserFloat(), no caso com parserFloat podemos trabalhar
+        com decimais:
+    </p>
+    <code>
+        document.getElementById('n1').innerHTML</br>
+        document.getElementById('n2').innerHTML</br>
+        n1 = Number.parseFloat(n1)</br>
+        n2 = Number.parseFloat(n2)</br>
+
+        var resultado = n1 + n2</br>
+    </code>
+    <p>
+        <span id='k1'>0.1</span>
+        <span id='ka'> + </span>
+        <span id='k2'>0.2</span>
+        <span id='ki'> == </span>
+        <span id='k3'> ? </span>
+    </p>
+    <p>Perceba o que ocorre se usarmos parseInt():</p>
+    <p>
+        <span id='l1'>0.1</span>
+        <span id='la'> + </span>
+        <span id='l2'>0.2</span>
+        <span id='li'> == </span>
+        <span id='l3'> ? </span>
+    </p>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
